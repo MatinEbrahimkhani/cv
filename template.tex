@@ -1,0 +1,457 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 3.0 (September 3, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%!TEX program = xelatex
+% NOTE: this template must be compiled with XeLaTeX rather than PDFLaTeX
+% due to the custom fonts used. The line above should ensure this happens
+% automatically, but if it doesn't, your LaTeX editor should have a simple toggle
+% to switch to using XeLaTeX.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	8pt, % Default font size, can be between 8pt and 12pt
+]{FreemanCV}
+
+\columnratio{0.55, 0.45} % Widths of the two columns, specified here as a ratio summing to 1 to correspond to percentages; adjust as needed for your content 
+
+% Headers and footers can be added with the following commands: \lhead{}, \rhead{}, \lfoot{} and \rfoot{}
+% Example right footer:
+%\rfoot{\textcolor{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin two-column mode
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CURRICULUM VITAE TITLE
+%----------------------------------------------------------------------------------------
+
+\parbox[][0.11\textheight][c]{\linewidth}{ % Box to hold your name and CV title; change the fixed height as needed to match the colored box to the right
+	\centering % Horizontally center text
+	
+	{\sffamily\Huge Matin Ebrahimkhani} % Your name
+	
+	\medskip % Vertical whitespace
+	
+	{\cursivefont\Huge\textcolor{headings}{Curriculum Vitae}}
+	
+	\vfill % Push content to the top of the box
+}
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+\section{Research Interests}
+
+\begin{itemize}
+    \item \textbf{Natural Language Processing:} Large Language Models, Text Correction, Multilingual Translation, Text-to-Speech Systems, Sequence-to-Sequence Models.
+    \item \textbf{Artificial Intelligence Applications:} Automated Video Dubbing Pipelines, Real-Time Language Understanding, Multi-modal Learning.
+    % \item \textbf{Reinforcement Learning:} Market Simulation, Price Prediction, Policy Learning in Dynamic Environments.
+    \item \textbf{Machine Learning Systems:} \\
+          Real-Time Inference, Efficient Training on Streaming Data, Evaluation and Optimization in Practical Contexts.
+    \item \textbf{Reproducible and Scalable AI:} \\
+          MLOps, Experimental Reproducibility, Scalable Training Pipelines for AI Research.
+\end{itemize}
+\medskip % Extra vertical whitespace before the next section
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Each qualification entry is added with a \qualificationentry command. Below is an empty one to use as a template:
+
+%\qualificationentry
+%	{} % Duration
+%	{} % Degree
+%	{} % Honors, achievements or distinctions (e.g. first class honors)
+%	{} % Department
+%	{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+  	%------------------------------------------------
+
+	\qualificationentry
+		{2020 -- 24} % Duration
+		{M.Sc. Computer Engineering - Artificial Intelligence and Robotics } % Degree
+		{} % Department
+		{Institute for Advanced Studies in Basic Sciences (IASBS), Zanjan, Iran} % Institution
+    		{
+            & \small{\textbullet} \, \textbf{\small GPA: 15.54/20 (3.11/4).} \\
+            & \small{\textbullet \, \textbf{Thesis:} \parbox[t]{0.65\linewidth}{\raggedright\textbf{Correction of Space and ZWNJ in Persian Text, using Sequence Labeling with Pre-trained Large Language Models}}} \\
+            & \small{\textbullet \, Mentor: Dr. Ebrahim Ansari} \\
+                & \small{\textbullet \, Courses: \parbox[t]{0.65\linewidth}{\raggedright ML, ANN, DL, Data Mining, Statistical Pattern Recognition}} \\
+            }
+	
+	\qualificationentry
+		{2016 -- 20} % Duration
+		{B.Sc. Information Technology Engineering} % Degree
+		{} % Department
+		{Institute for Advanced Studies in Basic Sciences (IASBS), Zanjan, Iran} % Institution
+    		  {
+              & \small{\textbullet} \, \textbf{GPA: 16.44/20 (3.25/4).} \\
+    		
+    		& \small{\textbullet \, \textbf{Thesis: Semi Automated Forex Assistant}} \\ 
+    		& \small{\textbullet \, Mentor: Dr. Ebrahim Ansari} \\
+    		& \small{\textbullet \, Courses: ML, NLP, Statistical Models, Inteligent Systems Design} \\
+    		}  % Honors, achievements or distinctions (e.g., first class honors)
+	%------------------------------------------------
+
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Research and Work Experience}
+
+% Each job is added with a \jobentry command. Below is an empty one to use as a template:
+
+%\jobentry
+%	{} % Duration
+%	{} % FT/PT (full time or part time)
+%	{} % Employer
+%	{} % Job title
+%	{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+\sloppy
+\jobentry
+	{Sep 2024 -- Apr 2025} % Duration
+	{} % FT/PT (full time or part time)
+	{REEICO} % Employer
+	{AI Researcher and Developer} % Job title
+	  {Designed and developed an end-to-end \textbf{AI-powered dubbing system} for translating and localizing English video content into Persian. The pipeline integrated automatic speech recognition (ASR), \textbf{neural machine translation} (NMT), \textbf{text-to-speech synthesis} (TTS), and speaker-aware voice cloning. Implemented speaker diarization and alignment techniques.  Independently handled the \textbf{MLOps} infrastructure, including model training pipelines, version control, containerization, and scalable deployment for reproducible and maintainable research. } % Description
+
+\fussy
+%------------------------------------------------
+
+\jobentry
+	{Jul 2021 -- Sep 2024} % Duration
+	{} % FT/PT (full time or part time)
+	{Freelance} % Employer
+        {Freelance Developer and Researcher}% Job title
+	{Designed and implemented web-based services and AI-driven applications across various domains. Conducted independent research on reinforcement learning and algorithmic trading, developing custom trading algorithms and indicators for the Forex market. Emphasized real-time data processing, predictive modeling, and the integration of machine learning into financial decision-making systems.} %Description
+
+    
+%------------------------------------------------
+
+\jobentry
+	{Apr 2020 -- Jul 2021} % Duration
+	{} % FT/PT (full time or part time)
+	{SAFA Corp.} % Employer
+	{Software Engineer and Data Analyst} % Job title
+	{Developing semi-automated and full-automated robots for the Forex market. Statistical analysis on financial markets. Developing Machine learning algorithms on financial market data.} % Description
+%------------------------------------------------
+% \medskip % Vertical whitespace
+% \medskip % Vertical whitespace
+% \medskip % Vertical whitespace
+\vspace{10em}
+
+\jobentry
+    {Dec 2018 -- Oct 2019} % Duration
+	{} % FT/PT (full time or part time)
+	{Naghil Noghoul} % Employer
+	{Programmer} % Job title
+	{Programmer and tech team lead in the development of Naghil Noghoul game-app. Naghil Noghoul is a storytelling game-app for kids aged 3 – 12. Developed with Unity game engine and C\# programming language.} % Description
+
+%------------------------------------------------
+
+\jobentry
+	{Jul 2018 -- Sep 2019} % Duration
+	{} % FT/PT (full time or part time)
+	{Chakavak Music Academy} % Employer
+	{Programmer} % Job title
+	{Design and implementation of a learning management system (LMS) for Chakavak Music Academy, Zanjan, Iran.} % Description
+	
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications and Conferences}
+
+%------------------------------------------------
+\textbf{PerSpaCor: Correcting Space and ZWNJ Errors in Persian Text with Transformer Models} \\
+\textit{Matin Ebrahimkhani, Ebrahim Ansari} \\
+\textit{Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing (RANLP 2025)} \\
+Developed and evaluated BERT-based sequence labeling models for correcting Persian spacing and ZWNJ errors. Trained on over 12.7M annotated words from Bijankhan and Peykare corpora, achieving a macro-average F1-score of 97.26\% (98.38\% with user feedback). Proposed novel classifier architectures, advancing Persian NLP and demonstrating state-of-the-art performance on this fundamental text normalization task.
+
+
+\medskip % Vertical whitespace
+
+
+\section{Other Interests}
+
+Programming on free will, Playing percussion instruments, Traveling, Overlanding, Camping, Science, Movies, Music, Poetry.
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the second (right) column
+
+%----------------------------------------------------------------------------------------
+%	COLORED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.11\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
+	\colorbox{shade}{ % Create colored box and specify background color
+		\begin{supertabular}{@{\hspace{3pt}} p{0.05\linewidth} | p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			% \raisebox{-1pt}{\faHome} & 444 Prof. Yousef Sobouti Blvd., Zanjan, Iran \\ % Address
+			\raisebox{-1pt}{\faPhone} & +98 930 743 39 34 \\ % Phone number
+            \raisebox{-1pt}{\small\faEnvelope} & \href{mailto:mat.ebrahimkhani@gmail.com}{mat.ebrahimkhani@gmail.com} \\ % Email address
+			\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:matinebrahimkhani@iasbs.ac.ir}{matinebrahimkhani@iasbs.ac.ir} \\ % Email address
+			\raisebox{-1pt}{\small\faDesktop} & \href{https://matinebrahimkhani.com}{matinebrahimkhani.com} \\ % Website
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/MatinEbrahimkhani}{MatinEbrahimkhani} \\ % GitHub profile
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/matin-ebrahimkhani-ba1b91185/}{matin-ebrahimkhani} \\ % LinkedIn profile
+			% See fontawesome.pdf in the Fonts folder for all icons you can use
+		\end{supertabular}
+	}
+	\vfill % Push content to the top of the box
+}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Honors and Awards}
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{2020}{\textbf{Rank 21 on the national exam}}{}
+	\tableentry{}{\textit{National exams "Concours" for entering M.Sc. studies}}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{2024}{\textbf{Rank 58 on the national exam}}{}
+	\tableentry{}{\textit{National exams "Concours" for entering Ph.D studies}}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+\medskip
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills} 
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+\begin{supertabular}{l l}
+% INTERPERSONAL
+\multicolumn{2}{l}{\textbf{Interpersonal}}\\
+\tableentry{Collaboration}{Team-oriented and cooperative}{}
+\tableentry{Leadership}{Confident team leader}{}
+\tableentry{Adaptability}{Open to others' guidance}{}
+\tableentry{Mentoring}{Patient and supportive}{spaceafter}
+
+\multicolumn{2}{l}{\textbf{Programming Languages}}\\
+\tableentry{Python}{Proficient — ML and scripting}{}
+\tableentry{Bash}{Proficient — automation and CLI tools}{}
+\tableentry{C/C++}{Advanced — systems and performance}{}
+
+\tableentry{HTML/CSS}{Advanced — web editing and design}{}
+\tableentry{JavaScript}{Familiar — basic web interactivity}{spaceafter}
+\multicolumn{2}{l}{\textbf{Deep Learning}}\\
+\tableentry{PyTorch}{Advanced — research and production}{}
+\tableentry{TensorFlow}{Intermediate — prototyping}{}
+\tableentry{CUDA}{Advanced — GPU acceleration}{}
+\tableentry{HuggingFace}{Advanced — NLP transformers}{}
+\tableentry{Tensorboard}{Model diagnostics}{spaceafter}
+
+\multicolumn{2}{l}{\textbf{Software \& Tools}}\\
+\tableentry{Linux (Manjaro, Debian)}{Daily driver and server management}{}
+
+\tableentry{Git}{Proficient — daily use and collaboration}{}
+\tableentry{Docker}{Proficient}{}
+\tableentry{Kubernetes}{Intermediate}{}
+\tableentry{\LaTeX}{Expert — academic writing}{}
+\tableentry{Unity}{Familiar — simulation and UI}{spaceafter}
+
+% Category: Theoretical
+\multicolumn{2}{l}{\textbf{Theoretical Knowledge}}\\
+\tableentry{Optimization}{Applied mathematical methods}{}
+\tableentry{Probability Theory}{Statistical modeling}{}
+\tableentry{Algorithms}{Design and analysis}{spaceafter}
+%  LANGUAGES
+\multicolumn{2}{l}{\textbf{Languages}}\\
+\tableentry{English}{Near-native}{}
+\tableentry{Persian}{Native}{}
+\tableentry{Azerbaijani}{Native}{}
+\tableentry{Turkish}{Basic — conversational ability}{spaceafter}
+
+
+\end{supertabular}
+
+
+\medskip
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+% \section{Academic Projects}
+
+% \subsection{Institute for Advanced Studies in Basic Sciences}
+
+% \begin{itemize}
+%     \item Image generator using a Variational AutoEncoders, Dr. Emad Fatemi-Zadeh, Spring 2019.
+%     \item Image Captioning using a novel model by adding attention mechanism to the bidirectional GRU, Dr. Emad Fatemi-Zadeh, Spring 2019.
+%     \item A Machine Learning Approach to Ranging Error Mitigation for UWB Localization using Python, Numpy, Scipy, and Scikit, Dr. Mohammad-Zadeh, Fall 2018.
+%     \item Activity Recognition system based on Multi-sensor data fusion (AReM), Dr. Mohammad-zadeh, Fall 2018.
+%     \item EASI algorithm for separating two blindly mixed images, Dr. Babaie-zadeh, Fall, 2018
+%     \item Basis Pursuit for solving an undetermined system of linear equations, Dr. Babaie-zadeh, Fall 2018
+%     \item SL0 algorithm, Dr. Babaie-zadeh, Fall 2018
+%     \item Deep Neural Networks, CNN, RNN using Tensorflow, Deep Learning with TensorFlow workshop, November 2018.
+% \end{itemize}
+
+% \subsection{University of Tehran}
+
+% \begin{itemize}
+%     \item Deep Neural Network, CNN, RNN, and GANs using Keras, Summer School of Deep Learning, August 2018.
+% \end{itemize}
+
+% \subsection{University of Zanjan}
+
+% \begin{itemize}
+%     \item Precoding Massive MIMO Systems, reducing computational complexity in Matlab, Spring 2017.
+%     \item Circuit Analysis Program for a broad range of circuits in C\#, Dr. F Bayat, Spring 2015.
+% \end{itemize}
+
+% \medskip
+% \vspace{100pt}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Teaching Experience}
+
+\begin{supertabular}{l l} 
+
+	\qualificationentry
+		{Winter 2022} % Duration
+		{Deep Learning} % Degree
+		{} % Department
+		{Institute for Advanced Studies in Basic Sciences} % Institution
+		{& Designing and grading computer and manual assignments.} 	
+	%------------------------------------------------
+	
+	\qualificationentry
+		{Fall 2021} % Duration
+		{Practical Introduction to Computer Science} % Degree
+		{} % Department
+		{Institute for Advanced Studies in Basic Sciences} % Institution
+		{& \parbox[t]{0.80\linewidth}        {Lecturer assistant, designing and grading computer assignments.\\}}
+	%------------------------------------------------
+	
+	\qualificationentry
+		{Spring 2020} % Duration
+		{Information Retrieval} % Degree
+		{} % Department
+		{Institute for Advanced Studies in Basic Sciences} % Institution
+		{& Grading computer and manual assignments.} 
+	
+	%------------------------------------------------
+
+	\qualificationentry
+	{Winter 2020} % Duration
+	{Advanced Programming II} % Degree
+	{} % Department
+	{Institute for Advanced Studies in Basic Sciences} % Institution
+	{& \parbox[t]{0.80\linewidth}        {Lecturer assistant, Holding exercise sessions, designing and grading computer and manual assignments.\\}}
+	%------------------------------------------------
+	
+	\qualificationentry
+	{Fall 2019} % Duration
+	{Advanced Programming I} % Degree
+	{} % Department
+	{Institute for Advanced Studies in Basic Sciences} % Institution
+{& \parbox[t]{0.80\linewidth}        {Lecturer assistant, Holding exercise sessions, designing and grading computer and manual assignments.\\}}
+	
+	%------------------------------------------------
+	
+	\qualificationentry
+	{Fall 2018} % Duration
+	{Digital Logic Circuits} % Degree
+	{} % Department
+	{Institute for Advanced Studies in Basic Sciences} % Institution
+	{& Grading computer and manual assignments.}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+
+\section{References}
+
+\noindent
+% \begin{minipage}[t]{\linewidth}
+  % \begin{minipage}[t]{0.48\linewidth}
+    \textbf{Dr.\ Ebrahim Ansari}\\
+    Assistant Professor, Dept.\ of Computer Science \& IT, IASBS, Zanjan, Iran\\
+    \textit{Email:} \texttt{ansari@iasbs.ac.ir}\\
+    % Office: Room 219, Dept.\ of CS \& IT, IASBS, Zanjan 45137-66731, Iran\\
+    % Tel: +98 24 3315 3380
+  % \end{minipage}\hfill
+  % \begin{minipage}[t]{0.48\linewidth}
+  % \vspace{1em}
+  
+    \textbf{Dr.\ Zahra Narimani}\\
+    Assistant Professor, Dept.\ of Computer Science \& IT, IASBS, Zanjan, Iran\\
+    \textit{Email:} \texttt{narimani@iasbs.ac.ir}\\
+    % Office: Room 374, IT \& CS Building, IASBS, Zanjan 45137-66731, Iran\\
+    % Tel: +98 24 3315 3374
+  % \end{minipage}
+% \end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol} % End two-column mode
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
