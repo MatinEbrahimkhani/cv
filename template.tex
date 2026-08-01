@@ -36,7 +36,7 @@
 %\rfoot{\textcolor{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
 
 %----------------------------------------------------------------------------------------
-
+% \sloppy
 \begin{document}
 
 \begin{paracol}{2} % Begin two-column mode
@@ -63,17 +63,24 @@
 \section{Research Interests}
 
 \begin{itemize}
-    \item \textbf{Natural Language Processing:} Large Language Models, Text Correction, Multilingual Translation, Text-to-Speech Systems, Sequence-to-Sequence Models.
-    \item \textbf{Artificial Intelligence Applications:} Automated Video Dubbing Pipelines, Real-Time Language Understanding, Multi-modal Learning.
-    % \item \textbf{Reinforcement Learning:} Market Simulation, Price Prediction, Policy Learning in Dynamic Environments.
-    \item \textbf{Machine Learning Systems:} \\
-          Real-Time Inference, Efficient Training on Streaming Data, Evaluation and Optimization in Practical Contexts.
-    \item \textbf{Reproducible and Scalable AI:} \\
-          MLOps, Experimental Reproducibility, Scalable Training Pipelines for AI Research.
+    \item \textbf{Natural Language Processing:} 
+          \\Large Language Models, Language Understanding and Generation, 
+          Text Correction, Sequence Labeling, Multilingual NLP.
+
+    \item \textbf{Speech and Multimodal Language Systems:} 
+          \\Automatic Speech Recognition, Text-to-Speech Systems, 
+          Neural Voice Generation, Language-Speech Integration, and Multimodal Learning.
+
+    \item \textbf{Efficient and Trustworthy AI:} 
+          \\Model Adaptation and Fine-Tuning, Efficient Training and Inference, 
+          Evaluation of AI Systems, and Robust Machine Learning.
+
+    \item \textbf{Applied Machine Learning Systems:} 
+          \\Scalable AI Pipelines, Real-World Deployment of Machine Learning Models, 
+          and Reproducible AI Research.
 \end{itemize}
-\medskip % Extra vertical whitespace before the next section
 
-
+\medskip
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
@@ -93,36 +100,64 @@
 
 %------------------------------------------------
 
-\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
-  	%------------------------------------------------
-
+\begin{supertabular}{r l}
 	\qualificationentry
-		{2020 -- 24} % Duration
-		{M.Sc. Computer Engineering - Artificial Intelligence and Robotics } % Degree
-		{} % Department
+		{2020-24} % Duration
+		{M.Sc. in Computer Engineering - Artificial Intelligence and Robotics } % Degree
+		{Department of Computer Science and Information Technology} % Department
 		{Institute for Advanced Studies in Basic Sciences (IASBS), Zanjan, Iran} % Institution
     		{
-            & \small{\textbullet} \, \textbf{\small GPA: 15.54/20 (3.11/4).} \\
-            & \small{\textbullet \, \textbf{Thesis:} \parbox[t]{0.65\linewidth}{\raggedright\textbf{Correction of Space and ZWNJ in Persian Text, using Sequence Labeling with Pre-trained Large Language Models}}} \\
-            & \small{\textbullet \, Mentor: Dr. Ebrahim Ansari} \\
-                & \small{\textbullet \, Courses: \parbox[t]{0.65\linewidth}{\raggedright ML, ANN, DL, Data Mining, Statistical Pattern Recognition}} \\
+            & \small{\textbullet\, \textbf{GPA:\ 3.11/4 (15.54/20).}} \\
+            & \small{\textbullet\, \textbf{Thesis:} \parbox[t]{0.70\linewidth}{\raggedright\textbf{Correction of Space and ZWNJ in Persian Text, using Sequence Labeling with Pre-trained Large Language Models}}} \\
+            & \small{\textbullet\, Mentor: Dr.\ Ebrahim Ansari} \\
+            & \small{\textbullet\, Main Courses: \parbox[t]{0.65\linewidth}{\raggedright DL, ANN, ML, Data Mining, Statistical Pattern Recognition}} \\
             }
 	
 	\qualificationentry
-		{2016 -- 20} % Duration
-		{B.Sc. Information Technology Engineering} % Degree
-		{} % Department
+		{2016-20} % Duration
+		{B.Sc. in Information Technology Engineering} % Degree
+		{Department of Computer Science and Information Technology} % Department
 		{Institute for Advanced Studies in Basic Sciences (IASBS), Zanjan, Iran} % Institution
     		  {
-              & \small{\textbullet} \, \textbf{GPA: 16.44/20 (3.25/4).} \\
+              & \small{\textbullet\, \textbf{GPA:\ 3.25/4 (16.44/20).}} \\
     		
-    		& \small{\textbullet \, \textbf{Thesis: Semi Automated Forex Assistant}} \\ 
-    		& \small{\textbullet \, Mentor: Dr. Ebrahim Ansari} \\
-    		& \small{\textbullet \, Courses: ML, NLP, Statistical Models, Inteligent Systems Design} \\
+    		& \small{\textbullet\, \textbf{Thesis: Semi Automated Forex Assistant}} \\ 
+    		& \small{\textbullet\, Mentor: Dr.\ Ebrahim Ansari} \\
+    		& \small{\textbullet\, Main Courses: \parbox[t]{0.65\linewidth}{\raggedright ML, NLP, Statistical Models, Intelligent Systems Design}} \\
     		}  % Honors, achievements or distinctions (e.g., first class honors)
 	%------------------------------------------------
 
 \end{supertabular}
+\medskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications and Conferences}
+
+\textbf{PerSpaCor: Correcting Space and ZWNJ Errors in Persian Text with Transformer Models} \\
+\textbf{Matin Ebrahimkhani}, Ebrahim Ansari\\
+\textit{Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing (RANLP 2025)} \\
+
+\begin{itemize}
+    \item \textbf{Novel Research:} Engineered and evaluated four original transformer-based classifier architectures—ReLU-Norm, DualStep DropNet, and SimplexNet—achieving a \textbf{State-of-the-Art macro F1-score of 97.26\%} (98.38\% with interactive correction).
+    \item \textbf{Dataset Leadership:} Independently curated, preprocessed, and \textbf{manually annotated} a massive dataset of over \textbf{12.7 million words}, creating a new high-quality benchmark for Persian NLP.
+    \item \textbf{Open Source Impact:} Released all SOTA models, code, and the annotated corpus to the research community and deployed a public web-based correction system to make the research accessible to end-users.
+    \item \textbf{Paper:} \href{https://aclanthology.org/2025.ranlp-1.40/}{ACL Anthology -- 2025.ranlp-1.40}
+    \item \textbf{Artifacts:} \href{https://huggingface.co/PerSpaCor}{Hugging Face/PerSpaCor} $|$ \href{https://github.com/MatinEbrahimkhani/PerSpaCor_components}{GitHub/PerSpaCor\_components}
+\end{itemize}
+
+\vspace{7em}
+
+\textbf{Efficient Adaptation of Foundation Models: A Comparative Study of Parameter-Efficient Fine-Tuning Methods for Domain-Specific Tasks} \\
+\textbf{Matin Ebrahimkhani} Mina Sirinchi, Mo Nasher, Mobin Ebrahimkhani \\
+\textit{(In Progress)} \\
+Investigating parameter-efficient fine-tuning techniques (LoRA, QLoRA, Adapters, Prefix Tuning, and full fine-tuning) across multiple NLP tasks (text classification, question answering, sequence labeling, text generation). The study will evaluate accuracy/F1 (for classification/QA/labeling), BLEU/ROUGE (for generation), and resource metrics (training time/GPU memory, inference latency, and number of trained parameters) to compare performance–efficiency trade-offs. Planned code and scripts will be released for reproducibility.
+\medbreak
+\medbreak
+
+
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -150,7 +185,7 @@
 	{AI Researcher and Developer} % Job title
 	  {Designed and developed an end-to-end \textbf{AI-powered dubbing system} for translating and localizing English video content into Persian. The pipeline integrated automatic speech recognition (ASR), \textbf{neural machine translation} (NMT), \textbf{text-to-speech synthesis} (TTS), and speaker-aware voice cloning. Implemented speaker diarization and alignment techniques.  Independently handled the \textbf{MLOps} infrastructure, including model training pipelines, version control, containerization, and scalable deployment for reproducible and maintainable research. } % Description
 
-\fussy
+
 %------------------------------------------------
 
 \jobentry
@@ -168,12 +203,12 @@
 	{} % FT/PT (full time or part time)
 	{SAFA Corp.} % Employer
 	{Software Engineer and Data Analyst} % Job title
-	{Developing semi-automated and full-automated robots for the Forex market. Statistical analysis on financial markets. Developing Machine learning algorithms on financial market data.} % Description
+	{Developed semi-automated and fully-automated robots for the Forex market. Statistical analysis on financial markets. Designend and implemented Machine learning algorithms on financial market data.} % Description
 %------------------------------------------------
 % \medskip % Vertical whitespace
 % \medskip % Vertical whitespace
 % \medskip % Vertical whitespace
-\vspace{10em}
+% \vspace{10em}
 
 \jobentry
     {Dec 2018 -- Oct 2019} % Duration
@@ -183,35 +218,19 @@
 	{Programmer and tech team lead in the development of Naghil Noghoul game-app. Naghil Noghoul is a storytelling game-app for kids aged 3 – 12. Developed with Unity game engine and C\# programming language.} % Description
 
 %------------------------------------------------
-
+ 
 \jobentry
 	{Jul 2018 -- Sep 2019} % Duration
 	{} % FT/PT (full time or part time)
 	{Chakavak Music Academy} % Employer
 	{Programmer} % Job title
-	{Design and implementation of a learning management system (LMS) for Chakavak Music Academy, Zanjan, Iran.} % Description
+	{Implemented a learning management system (LMS) for Chakavak Music Academy, Zanjan, Iran.} % Description
 	
 
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-
-\section{Publications and Conferences}
-
-%------------------------------------------------
-\textbf{PerSpaCor: Correcting Space and ZWNJ Errors in Persian Text with Transformer Models} \\
-\textit{Matin Ebrahimkhani, Ebrahim Ansari} \\
-\textit{Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing (RANLP 2025)} \\
-Developed and evaluated BERT-based sequence labeling models for correcting Persian spacing and ZWNJ errors. Trained on over 12.7M annotated words from Bijankhan and Peykare corpora, achieving a macro-average F1-score of 97.26\% (98.38\% with user feedback). Proposed novel classifier architectures, advancing Persian NLP and demonstrating state-of-the-art performance on this fundamental text normalization task.
-
-
-\medskip % Vertical whitespace
 
 
 \section{Other Interests}
-
-Programming on free will, Playing percussion instruments, Traveling, Overlanding, Camping, Science, Movies, Music, Poetry.
-
+Free and Open-Source Software (FOSS), Computer Hardware and PC Building, DIY Home Projects, Canines, Percussion Instruments, Overlanding \& Camping, Traveling, Cinema, Discovering Exotic Music, Poetry, and Fixing Things That Weren't Technically Broken.
 %----------------------------------------------------------------------------------------
 
 \switchcolumn % Switch to the second (right) column
@@ -235,12 +254,18 @@ Programming on free will, Playing percussion instruments, Traveling, Overlanding
 	}
 	\vfill % Push content to the top of the box
 }
+\section{Planned Publications}
+
+\textbf{Efficient Adaptation of Foundation Models: A Comparative Study of Parameter-Efficient Fine-Tuning Methods for Domain-Specific Tasks} \\
+\textbf{Matin Ebrahimkhani} (first author), ... \\
+\textit{In preparation} \\
+Investigating parameter-efficient fine-tuning techniques (LoRA, QLoRA, Adapters, Prefix Tuning, and full fine-tuning) across multiple NLP tasks (text classification, question answering, sequence labeling, text generation). The study will evaluate accuracy/F1 (for classification/QA/labeling), BLEU/ROUGE (for generation), and resource metrics (training time/GPU memory, inference latency, and number of trained parameters) to compare performance–efficiency trade-offs. Planned code and scripts will be released for reproducibility.
 
 %----------------------------------------------------------------------------------------
 %	AWARDS
 %----------------------------------------------------------------------------------------
 
-\section{Honors and Awards}
+\section{Honors and Achievements}
 
 % This section is laid out using a table. A \tableentry command adds lines with the following parameters:
 
@@ -250,20 +275,33 @@ Programming on free will, Playing percussion instruments, Traveling, Overlanding
 
 %------------------------------------------------
 
-\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+\begin{supertabular}{r l}
+
+	\tableentry{2024}{\textbf{Ranked 58th Nationwide}}{}
+	\tableentry{}{\textit{National Ph.D. Entrance Examination (Concours)}}{spaceafter}
+
+	%------------------------------------------------
+	\tableentry{2022}{\textbf{LLM Research Grant Recipient}}{}
+	\tableentry{}{\textit{Awarded funding to support Large Language Model research }}{spaceafter}
+
+	%------------------------------------------------
+	\tableentry{2021}{\textbf{Founder of IASBS Music Society}}{}
+	\tableentry{}{\textit{Established the student music community at the IASBS}}{spaceafter}
+
+	%------------------------------------------------
+
+	\tableentry{2020}{\textbf{Ranked 21st Nationwide}}{}
+	\tableentry{}{\textit{National Graduate Entrance Examination 
+	(Concours)}}{}
+	\tableentry{}{\textit{M.Sc. admission in Computer Sciences}}{spaceafter}
 	
 	%------------------------------------------------
-	
-	\tableentry{2020}{\textbf{Rank 21 on the national exam}}{}
-	\tableentry{}{\textit{National exams "Concours" for entering M.Sc. studies}}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\tableentry{2024}{\textbf{Rank 58 on the national exam}}{}
-	\tableentry{}{\textit{National exams "Concours" for entering Ph.D studies}}{spaceafter}
+
+	\tableentry{2019}{\textbf{1st Place — IASBS ACM Programming Competition}}{}
+	\tableentry{}{\textit{Member of the first competitive programming team at IASBS}}{spaceafter}
 	
 	%------------------------------------------------
-	
+
 \end{supertabular}
 
 \medskip
@@ -272,61 +310,61 @@ Programming on free will, Playing percussion instruments, Traveling, Overlanding
 %	COMPUTER SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{Skills} 
+\section{Skills}
 
-% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
-
-%\tableentry{Heading}{Content}{spaceafter}
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+\begin{supertabular}{l l}
 
 %------------------------------------------------
-\begin{supertabular}{l l}
-% INTERPERSONAL
-\multicolumn{2}{l}{\textbf{Interpersonal}}\\
-\tableentry{Collaboration}{Team-oriented and cooperative}{}
-\tableentry{Leadership}{Confident team leader}{}
-\tableentry{Adaptability}{Open to others' guidance}{}
-\tableentry{Mentoring}{Patient and supportive}{spaceafter}
 
 \multicolumn{2}{l}{\textbf{Programming Languages}}\\
-\tableentry{Python}{Proficient — ML and scripting}{}
-\tableentry{Bash}{Proficient — automation and CLI tools}{}
+\tableentry{Python}{Expert — ML, NLP, and automation}{}
 \tableentry{C/C++}{Advanced — systems and performance}{}
+\tableentry{Bash}{Proficient — scripting and automation}{}
+\tableentry{JavaScript}{Familiar — web development}{}
+\tableentry{HTML/CSS}{Advanced — web design and development}{}
+\tableentry{SQL}{Familiar — database operations}{}
+\tableentry{C\#}{Familiar — application development}{spaceafter}
 
-\tableentry{HTML/CSS}{Advanced — web editing and design}{}
-\tableentry{JavaScript}{Familiar — basic web interactivity}{spaceafter}
-\multicolumn{2}{l}{\textbf{Deep Learning}}\\
+%------------------------------------------------
+
+\multicolumn{2}{l}{\textbf{Machine Learning \& Deep Learning}}\\
 \tableentry{PyTorch}{Advanced — research and production}{}
 \tableentry{TensorFlow}{Intermediate — prototyping}{}
-\tableentry{CUDA}{Advanced — GPU acceleration}{}
-\tableentry{HuggingFace}{Advanced — NLP transformers}{}
-\tableentry{Tensorboard}{Model diagnostics}{spaceafter}
+\tableentry{HuggingFace}{Advanced — transformers, fine-tuning}{}
+\tableentry{}{datasets and nlp pipelines}{}
+\tableentry{CUDA}{Intermediate — GPU computing}{}
+\tableentry{TensorBoard}{Model monitoring and analysis}{spaceafter}
 
-\multicolumn{2}{l}{\textbf{Software \& Tools}}\\
-\tableentry{Linux (Manjaro, Debian)}{Daily driver and server management}{}
+%------------------------------------------------
 
-\tableentry{Git}{Proficient — daily use and collaboration}{}
-\tableentry{Docker}{Proficient}{}
-\tableentry{Kubernetes}{Intermediate}{}
-\tableentry{\LaTeX}{Expert — academic writing}{}
-\tableentry{Unity}{Familiar — simulation and UI}{spaceafter}
+\multicolumn{2}{l}{\textbf{Software Engineering \& Tools}}\\
+\tableentry{Linux}{Daily driver and server management}{}
+\tableentry{Git}{Proficient — VC and collaboration}{}
+\tableentry{Docker}{Proficient — containerization}{}
+\tableentry{Kubernetes}{Intermediate — service management}{}
+\tableentry{\LaTeX}{Expert — academic writing}{spaceafter}
 
-% Category: Theoretical
-\multicolumn{2}{l}{\textbf{Theoretical Knowledge}}\\
+%------------------------------------------------
+
+\multicolumn{2}{l}{\textbf{Mathematical Foundations}}\\
+\tableentry{Machine Learning}{Modeling and evaluation}{}
+\tableentry{Deep Learning}{Neural architectures and optimization}{}
+\tableentry{Algorithms}{Design and analysis}{}
 \tableentry{Optimization}{Applied mathematical methods}{}
 \tableentry{Probability Theory}{Statistical modeling}{}
-\tableentry{Algorithms}{Design and analysis}{spaceafter}
-%  LANGUAGES
+\tableentry{Linear Algebra}{Mathematical foundations}{spaceafter}
+
+%------------------------------------------------
+
 \multicolumn{2}{l}{\textbf{Languages}}\\
 \tableentry{English}{Near-native}{}
 \tableentry{Persian}{Native}{}
 \tableentry{Azerbaijani}{Native}{}
-\tableentry{Turkish}{Basic — conversational ability}{spaceafter}
+\tableentry{Turkish}{Elementary}{}
 
+%------------------------------------------------
 
 \end{supertabular}
-
 
 \medskip
 
@@ -368,64 +406,66 @@ Programming on free will, Playing percussion instruments, Traveling, Overlanding
 %	COMMUNICATION SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{Teaching Experience}
+\section{Teaching Assistant Experience}
+{\renewcommand{\arraystretch}{0.85}
+\begin{supertabular}{p{0.05\textwidth} p{0.32\textwidth}} 
 
-\begin{supertabular}{l l} 
-
 	\qualificationentry
-		{Winter 2022} % Duration
-		{Deep Learning} % Degree
-		{} % Department
-		{Institute for Advanced Studies in Basic Sciences} % Institution
-		{& Designing and grading computer and manual assignments.} 	
-	%------------------------------------------------
-	
-	\qualificationentry
-		{Fall 2021} % Duration
-		{Practical Introduction to Computer Science} % Degree
-		{} % Department
-		{Institute for Advanced Studies in Basic Sciences} % Institution
-		{& \parbox[t]{0.80\linewidth}        {Lecturer assistant, designing and grading computer assignments.\\}}
-	%------------------------------------------------
-	
-	\qualificationentry
-		{Spring 2020} % Duration
-		{Information Retrieval} % Degree
-		{} % Department
-		{Institute for Advanced Studies in Basic Sciences} % Institution
-		{& Grading computer and manual assignments.} 
+		{Winter 2022}
+		{Deep Learning}
+		{}
+		{Institute for Advanced Studies in Basic Sciences}
+		{& Teaching Assistant; explaining deep learning concepts, designing and grading assignments.}
 	
 	%------------------------------------------------
 
 	\qualificationentry
-	{Winter 2020} % Duration
-	{Advanced Programming II} % Degree
-	{} % Department
-	{Institute for Advanced Studies in Basic Sciences} % Institution
-	{& \parbox[t]{0.80\linewidth}        {Lecturer assistant, Holding exercise sessions, designing and grading computer and manual assignments.\\}}
+		{Fall 2021}
+		{Practical Introduction to Computer Science}
+		{}
+		{Institute for Advanced Studies in Basic Sciences}
+		{& Teaching Assistant; conducting problem-solving sessions, designing and grading programming assignments.}
+
 	%------------------------------------------------
 	
 	\qualificationentry
-	{Fall 2019} % Duration
-	{Advanced Programming I} % Degree
-	{} % Department
-	{Institute for Advanced Studies in Basic Sciences} % Institution
-{& \parbox[t]{0.80\linewidth}        {Lecturer assistant, Holding exercise sessions, designing and grading computer and manual assignments.\\}}
-	
+		{Spring 2020}
+		{Information Retrieval}
+		{}
+		{Institute for Advanced Studies in Basic Sciences}
+		{& Teaching Assistant; grading programming and written assignments.}
+
 	%------------------------------------------------
-	
+
 	\qualificationentry
-	{Fall 2018} % Duration
-	{Digital Logic Circuits} % Degree
-	{} % Department
-	{Institute for Advanced Studies in Basic Sciences} % Institution
-	{& Grading computer and manual assignments.}
-	
+		{Winter 2020}
+		{Advanced Programming II}
+		{}
+		{Institute for Advanced Studies in Basic Sciences}
+		{& Teaching Assistant; conducting exercise sessions, explaining concepts, and designing and grading assignments.}
+
 	%------------------------------------------------
-	
+
+	\qualificationentry
+		{Fall 2019}
+		{Advanced Programming I}
+		{}
+		{Institute for Advanced Studies in Basic Sciences}
+		{& Teaching Assistant; conducting exercise sessions, explaining concepts, and designing and grading assignments.}
+
+	%------------------------------------------------
+
+	\qualificationentry
+		{Fall 2018}
+		{Digital Logic Circuits}
+		{}
+		{Institute for Advanced Studies in Basic Sciences}
+		{& Teaching Assistant; grading programming and written assignments.}
+
+	%------------------------------------------------
+
 \end{supertabular}
-
-
+}
 \section{References}
 
 \noindent
@@ -448,7 +488,17 @@ Programming on free will, Playing percussion instruments, Traveling, Overlanding
   % \end{minipage}
 % \end{minipage}
 
+    \textbf{Dr.\ Parvin Razzaghi}\\
+    Assistant Professor, Dept.\ of Computer Science \& IT, IASBS, Zanjan, Iran\\
+    \textit{Email:} \texttt{r.razzaghi@iasbs.ac.ir}\\
+    % Office: Room 374, IT \& CS Building, IASBS, Zanjan 45137-66731, Iran\\
+    % Tel: +98 24 3315 3374
+  % \end{minipage}
+% \end{minipage}
 %----------------------------------------------------------------------------------------
+
+
+
 
 \end{paracol} % End two-column mode
 
